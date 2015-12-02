@@ -1,0 +1,71 @@
+body, html {
+	padding: 0;
+	margin: 0;
+	font-family: arial;
+}
+
+.container {
+	display: -webkit-flex;
+	display: flex;
+	margin: 0 auto;
+	height: 100px;
+}
+
+
+
+.big-container {
+	height: 250px;
+}
+
+.one-third {
+  -webkit-flex: 4;
+          flex: 4;
+}
+
+.first-third {
+	background-color: red;
+}
+
+.second-third {
+	background-color: blue;
+}
+
+.third-third {
+	background-color: gray;
+}
+
+.first-third, .second-third, .third-third {
+	margin: 10px;
+}
+
+#offset1 {
+	margin: 0;
+}
+
+.two-thirds {
+  -webkit-flex: 8;
+	      flex: 8;
+	      background-color: blue;
+}
+
+p {
+	margin: 10px;
+}
+
+#offset2 {
+	background-color: red;
+}
+
+.footer {
+	margin-top: 20px;
+}
+
+.nested {
+	width: 75%;
+	background-color: gray;
+	margin: 0 auto;
+	height: 100px;
+}
+
+
+

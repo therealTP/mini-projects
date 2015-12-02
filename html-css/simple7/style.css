@@ -1,0 +1,71 @@
+html, body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #DDDDDD;
+	font-family: arial;
+}
+
+.cover-box {
+	width: 80%;
+	background-color: white;
+	margin: auto;
+	padding: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+footer {
+	height: 75px;
+	background-color: black;
+	color: white;
+	display: flex;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	flex-direction: row-reverse;
+}
+
+.top-box {
+	height: 275px;
+}
+
+.btn {
+	height: 50px;
+	width: 150px;
+	float: left;
+	line-height: 50px;
+	margin-right: 10px;
+	text-align: center;
+}
+
+.btn:hover {
+	background-color: black;
+	color: white;
+	font-weight: bold;
+}
+
+.btn-red {
+	background-color: #D0021B;
+	color: white;
+}
+
+.btn-blue {
+	background-color: #4A90E2;
+	color: white;
+}
+
+.img-box {
+	height: 300px;
+	background-color: gray;
+	color: white;
+	text-align: center;
+	line-height: 300px;
+	font-size: 24px;
+}
+
+.foot-link {
+	margin: 20px;
+	line-height: 35px;
+	margin-right: 40px;
+}
