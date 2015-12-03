@@ -1,0 +1,30 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+.section {
+	height: 300px;
+}
+
+.gray {
+	background-color: #f0f0f0;
+}
+
+.white {
+	background-color: white;
+}
+
+.companies {
+	background-color: #bdd537;
+}
+
+.newsletter {
+	background-color: #4d787c;
+}
+
+footer {
+	height: 50px;
+	background-color: #41666c;
+}
+
