@@ -1,0 +1,77 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+	font-family: sans-serif;
+}
+
+.intro-box {
+	width: 70%;
+	min-height: 250px;
+	position: relative;
+	margin: 0 auto;
+	padding: 0.5em 1em 0.5em 1em;
+	font-size: 125%;
+	text-align: justify;
+}
+
+a {
+	text-decoration: none;
+}
+
+.welcome-text {
+	text-align: right;
+	font-weight: bold;
+}
+
+.container {
+	width: 80%;
+	min-height: 800px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-content: space-around;
+	margin: 20px auto;
+}
+
+.item {
+	width: 25%;
+	line-height: 175px;
+	height: 175px;
+}
+
+.img {
+	vertical-align: middle;
+}
+
+.product-photo {
+	display: block;
+	margin: auto;
+}
+
+@media screen and (max-width: 766px) {
+	.item {
+		width: 33%;
+	}
+}
+
+@media screen and (max-width: 585px) {
+	.item {
+		width: 50%;
+	}
+}
+
+footer p {
+	text-align: center;
+	font-size: 75%;
+}
+
+footer ul {
+	text-align: center;
+	padding: 0;
+}
+
+footer li {
+	display: inline;
+}
+
