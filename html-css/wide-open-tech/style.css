@@ -54,6 +54,86 @@ header {
 	margin-right: 20px;
 }
 
+/*mobile menu - hidden on large screens*/
+
+.navbar-toggle {
+	display: none;
+	width: 50px;
+	padding: 0px 10px;
+	box-sizing: border-box;
+	background-color: rgba(0,0,0,0);
+	float: right;
+	border: none;
+	position: relative;
+	margin-right: 10px;
+}
+
+.mobile-menu-bar {
+	display: block;
+	background-color: white;
+	height: 5px;
+	width: 23px;
+	border-radius: 2px;
+	margin: 5px auto;
+}
+
+.navbar-mobile {
+	display: none;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	font-family: 'Open Sans';
+	text-transform: uppercase;
+}
+
+.navbar-mobile a {
+	height: 46px;
+	line-height: 46px;
+	padding-left: 10px;
+	display: block;
+	color: white;
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	text-decoration: none;
+	border-bottom: 1px solid rgb(84, 83, 83);
+}
+
+.navbar-mobile a:hover {
+	color: rgb(189, 213, 55);
+}
+
+/* classes to add when clicking mobile menu */
+.mobile-menu-visible {
+	display: block;
+}
+
+.shorter-header {
+	height: 61px;
+}
+
+
+@media screen and (max-width: 955px) {
+
+	header {
+		width: 100%;
+		padding-top: 14px;
+	}
+
+	.logo {
+		padding: 0 10px;
+	}
+
+	.main-menu {
+		display: none;
+	}
+
+	.navbar-toggle {
+		display: block;
+	}
+
+	.
+}
+
 /*hero text section*/
 
 .hero-text {
@@ -79,6 +159,21 @@ header {
 	font-weight: 300;
 }
 
+@media screen and (max-width: 780px) {
+	.hero-text {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.hero-text h1 {
+		font-size: 20vw;
+		line-height: 25vw;
+	}
+
+	.hero-text p.first-line {
+		text-align: center;
+	}
+}
+
 /*hero box feature*/
 
 .hero-box-container {
@@ -86,8 +181,8 @@ header {
 	margin: 0 auto;
 	margin-top: 20px;
 	display: flex;
-/*	flex-flow: row wrap;*/
-
+	flex-directon: row;
+	justify-content: center;
 }
 
 .hero-box {
@@ -156,6 +251,19 @@ header {
 
 .hero5 {
 	background-color: rgb(189, 213, 55);
+}
+
+@media screen and (max-width: 955px) {
+	.hero-box-container {
+		width: 80%;
+		flex-flow: row wrap;
+		padding-bottom: 40px;
+	}
+
+	.hero-text {
+		margin-top: 35px;
+	}
+
 }
 
 /****Section 2 - HOW****/
@@ -292,7 +400,7 @@ header {
 /*	min-height: 646px;*/
 	text-align: center;
 	font-family: 'Open Sans';
-	padding: 36px 0px 0px 0px;	
+	padding: 36px 0px 0px 0px;
 	color: #40666d;
 	overflow: hidden;
 }
@@ -379,7 +487,7 @@ header {
 /*query for narrow, mobile screens*/
 
 @media screen and (max-width: 992px) {
-	
+
 	.help-h6 {
 		margin: 0px auto 35px auto;
 		max-width: 720px;
@@ -682,9 +790,50 @@ header {
 	}
 }
 
-
 footer {
-	height: 50px;
+	height: 62px;
+	box-sizing: border-box;
+	color: white;
 	background-color: #41666c;
+	padding: 18px 50px;
+	font-size: 12px;
 }
 
+.footer-text {
+	float: left;
+	font-family: 'Helvetica';
+	font-weight: 500;
+	line-height: 25px;
+	letter-spacing: 1px;
+	margin: 0 auto;
+}
+
+.footer-text span {
+
+}
+
+.footer-menu {
+	float: right;
+	line-height: 20px;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin: 0 auto;
+}
+
+.footer-menu-item {
+	display: inline;
+	float: left;
+	line-height: 25px;
+	margin: 0 15px;
+}
+
+.footer-text span {
+	color: rgb(189, 213, 55);
+}
+
+@media only screen and (max-width: 980px) {
+	.footer-menu {
+		display: none;
+	}
+}

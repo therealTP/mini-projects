@@ -8,18 +8,20 @@
 	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- jquery: on mobile button click, toggle: class .visible to mobile menu, class .smaller-bottom-margin to header. Also remove .visible class when li in mobile menu is clicked on (gets rid of menu) -->
 
 </head>
 <body>
 
 	<div class="content-wrapper">
-		
+
 		<div class="section hero">
 			<header class="main-header">
 				<div class="logo"><img src="img/wot-logo-white.svg" alt=""></div>
 				<div class="main-menu">
 					<ul class="menu-list">
-						<li class="menu-item">Services</li>
+						<li class="menu-item"><a href="#how">Services</a></li>
 						<li class="menu-item">Company</li>
 						<li class="menu-item">Portfolio</li>
 						<li class="menu-item">Careers</li>
@@ -27,7 +29,21 @@
 						<li class="menu-item">Contact</li>
 					</ul>
 				</div>
+
+				<button type="button" class="navbar-toggle" name="navbar-toggle-collapsed" data-toggle="collapse" data-target="#master-nav">
+					<span class="mobile-menu-bar"></span>
+					<span class="mobile-menu-bar"></span>
+					<span class="mobile-menu-bar"></span>
+				</button>
 			</header>
+			<div class="navbar-collapse navbar-mobile" id="master-nav">
+				<a href="#how">Services</a>
+				<a href="#">Company</a>
+				<a href="#">Portfolio</a>
+				<a href="#">Careers</a>
+				<a href="#">Blog</a>
+				<a href="#">Contact</a>
+			</div>
 
 			<div class="hero-text">
 				<p class="first-line">Your Digital</p>
@@ -35,7 +51,7 @@
 				<div class="hero-bottom-text">
 					<div class="hero-lines"></div>
 					<div class="hero-text-last">Building Business <span class="orange-span">Solutions</span> &#38; Bright <span class="green-span">Ideas</span></div>
-					<div class="hero-lines"></div>					
+					<div class="hero-lines"></div>
 				</div>
 			</div>
 
@@ -65,7 +81,7 @@
 
 		</div>
 
-		<div class="section how gray">
+		<div class="section how gray" id="how">
 			<div class="how-text">Wide Open Technologies brings enterprise-level technology to small and mid-sized companies – building the digital technology that solves unique problems, works better and turns ideas into functional reality.</div>
 			<div class="how-icon"></div>
 			<h4 class="how-h4">Here's how it <span class="green-bold">works</span></h4>
@@ -105,7 +121,7 @@
 		<div class="section help gray">
 			<h2 class="help-h2">How can we <span>help?</span></h2>
 			<h6 class="help-h6">Here are just a few of the ways Wide Open can help you and your business.</h6>
-			
+
 			<div class="block-container">
 				<div class="block small-block">
 					<p class="block-heading">Repair or modify<br>  existing software</p>
@@ -186,8 +202,30 @@
 				<input type="submit" value="SIGN UP" id="sign-up-button">
 			</div>
 		</div>
-		<footer>© 2015 Wide Open Technologies - Privacy</footer>
+		<footer>
+			<p class="footer-text">© 2015 Wide Open Technologies - <span>Privacy</span></p>
+			<ul class="footer-menu">
+				<li class="footer-menu-item">Services</li>
+				<li class="footer-menu-item">Company</li>
+				<li class="footer-menu-item">Portfolio</li>
+				<li class="footer-menu-item">Careers</li>
+				<li class="footer-menu-item">Blog</li>
+				<li class="footer-menu-item">Contact</li>
+			</ul>
+		</footer>
 	</div>
-	
+	<script type="text/javascript">
+		$(".navbar-toggle").click(function() {
+			$(".navbar-mobile").toggleClass("mobile-menu-visible");
+			$("header").toggleClass("shorter-header");
+		});
+
+		$(".navbar-mobile a").click(function(){
+			$(".navbar-mobile").toggleClass("mobile-menu-visible");
+		})
+	</script>
+
+	</script>
+
 </body>
 </html>
